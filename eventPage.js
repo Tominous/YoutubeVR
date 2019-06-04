@@ -36,7 +36,7 @@
       updateIcon(tab, VR_VIDEO.Exist);
     } else if (changeInfo.status == "complete") {
       currentTab_ = tab;
-      // chrome.tabs.sendMessage(currentTab_.id, {message : "queryStatus"});
+       chrome.tabs.sendMessage(currentTab_.id, {message : "queryStatus"});
     }
   });
 }();
